@@ -1,0 +1,146 @@
+
+/* Configuração geral da página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #252525;
+    color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/* Janela principal */
+.janela {
+    width: 100%;
+    height: 100vh;
+    background-color: #292929;
+    overflow: hidden;
+}
+
+/* Barra superior */
+.barra {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 10px;
+    background-color: #34383b;
+    border-bottom: 1px solid #555b60;
+    color: #8fce88;
+    white-space: nowrap;
+}
+
+.icone {
+    color: #54b6e8;
+    font-size: 16px;
+}
+
+.filtro {
+    margin-left: 25px;
+    color: #b9b9b9;
+}
+
+/* Área que permite rolar a tabela */
+.tabela-container {
+    width: 100%;
+    height: calc(100vh - 25px);
+    overflow: auto;
+}
+
+/* Tabela */
+table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+/* Cabeçalho */
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+th {
+    height: 27px;
+    padding: 5px 9px;
+    background-color: #45494c;
+    color: #d7d7d7;
+    border-right: 1px solid #292929;
+    border-bottom: 1px solid #1b1b1b;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+th span {
+    color: #65b9dc;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+/* Cabeçalho da coluna selecionada */
+th.selecionado {
+    background-color: #60606e;
+    color: #ffffff;
+    box-shadow: inset 0 -2px #77a9e8;
+}
+
+/* Células */
+td {
+    height: 21px;
+    padding: 2px 9px;
+    border-right: 1px solid #202020;
+    border-bottom: 1px solid #1d1d1d;
+    white-space: nowrap;
+    color: #d4dce5;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(odd) {
+    background-color: #303030;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #292929;
+}
+
+/* Efeito ao passar o mouse */
+tbody tr:hover {
+    background-color: #3c4147;
+}
+
+/* Coluna com o número da linha */
+.numero {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: 34px;
+    min-width: 34px;
+    text-align: center;
+    color: #bfc6cb;
+    background-color: #41484d;
+    padding: 2px 4px;
+    border-right: 1px solid #171717;
+}
+
+/* Manter a primeira coluna do cabeçalho acima das outras */
+thead .numero {
+    z-index: 3;
+}
+
+/* Valores nulos */
+.nulo {
+    color: #808b9c;
+}
+
+/* Seleção de célula com mouse */
+td:focus {
+    outline: 1px solid #9ba9c4;
+    outline-offset: -2px;
+}

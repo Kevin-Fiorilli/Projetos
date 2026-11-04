@@ -1,0 +1,134 @@
+     /* Configuração do caracteres */
+       @charset "UTF-8";
+        
+      /* Configuração de importação de fonte fora */
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Chelsea+Market&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+      /*Configuração de fontes importadas e fontes personalizadas */
+      @font-face {
+        font-family: 'perfil' ;
+        src: url(Chelsea_Market/ChelseaMarket-Regular.ttf) format('opentype');
+        font-weight:normal;
+      }
+
+      /*
+      Paleta de cores
+         #6D4C3D
+        #727D71
+        #DCC9B6
+        #A39171
+       #ABC4AB
+       #A7AB8E
+
+      */
+  
+      /* Configuração global*/
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* Configuração dos nomes de variaveis */
+      :root {
+        ---cor0:#6D4C3D;
+        --cor1:#727D71;
+        --cor2:#DCC9B6;
+        --cor3:#A39171;
+        --cor4:#ABC4AB;
+        --cor5:#C0AD94;
+        --cor6:#A7AB8E;
+
+        --fonte-padrao:monospace;
+        --fonte-destaque: 'Chelsea Market', curisve;
+        --fonte-personalizada:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      /* Configuração do body (corpo do codigo)*/
+      body {
+        background-color: var(--cor2); 
+        font-family: var(--fonte-padrao);
+      }
+
+      /* Configuração  header (cabeçalho do site)*/
+      header {
+        background-image: -o-repeating-linear-gradient(to bottom, var(--cor4), var(---cor1), var(--cor6));
+        background-color: var(--cor1);
+        min-width: 150px;
+        text-align: center;
+        /* Definição de espaçmento interno */
+        padding-top: 40px;
+      }
+
+      header > h1 {
+        color: var(---cor0);
+        font-family: var(--fonte-destaque);
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.709);
+      }
+
+      header > p {
+        font-family: var(--fonte-personalizada);
+        color: white;
+        font-size: 1.2em;
+        margin: auto;
+        max-width: 600px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.419);
+      }
+
+      nav {
+        background-color: var(--cor5);
+        padding: 10px;
+        /* Configurando a sombra do nav */
+        box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.628);
+      }
+       
+      nav > a { 
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+      transition-duration: 1s;
+      }
+
+      nav > a:hover {
+        background-color: var(--cor3);
+        color: rgb(0, 0, 0);
+      }
+      main {
+        /* Configuração minima de largura 300 */
+        min-width: 300px;
+        /* Configuração maxima de largura 1000 */
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 20px;
+        box-sizing: 0px 0px 10px rgb(0, 0, 0, 0.544);
+        /* Configurando a borda do lado esquerdo da parte de baixo */
+        border-top-left-radius: 10px;
+        /* Configurando a borda do lado direita da parte de baixo */
+        border-top-right-radius: 10px;
+      }
+
+      main h1 {
+        color: black;
+        font-family: var(--fonte-padrao);
+      }
+
+      main h2 {
+        font-family: var(--fonte-personalizada) ;
+      }
+
+      main h3 {
+        font-family: var(--fonte-personalizada);
+      }
+
+      footer {
+        background-color: var();
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }

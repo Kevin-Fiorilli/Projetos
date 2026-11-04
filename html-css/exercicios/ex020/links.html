@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+         # = id 
+         . = clss
+         : = pseudo- class
+         :: = psseudo- elements 
+         > = clildren 
+         */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {    /* aqui estou mexendo no link estou modificando cor text-decorantion tirando o sublinhado e dexiando a font em bold mais forte*/
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {  /* (visited) link ja visitado , aqui quando o link ja foi visitado ficara azul claro */
+             color: aqua;
+        }
+
+        a:hover {  /* quando passa o mouse em cima ira ficar preto e com a um sublinhado em baixo do link ou da palavra*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active  /* ativo quando clicamos no link ele ficara amarelo  */{
+             color: yellow;
+        }
+
+        a::after { /*(after) seginifica depois */
+            content: '  [link] '; /* content = Conteúdo*/
+            text-decoration: none;
+            font-weight: normal;
+             color: darkblue
+        }
+    </style>
+</head>
+<body>
+     <h1>Personalizando Links</h1>
+     <ul>
+         <li><a href="https://www.youtube.com/">youtube</a></li>
+         <li><a href="https://fiorilli.com.br/">Fiorilli Software</a></li>
+         <li><a href="https://www.cursoemvideo.com/">CURSO EM VIDEO</a></li>
+     </ul>
+</body>
+</html>

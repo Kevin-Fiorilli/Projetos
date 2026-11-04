@@ -1,0 +1,21 @@
+# Site do Mercado livre 
+
+[HEADER] --> Cabeçalho do site 
+
+Logo , Nome da EMPRESA , Barra de pesquisa Ofertas 
+
+[NAV] --> Links do Site 
+
+ Dentro do Nav vamos colocar Links Local de entregas , Categorias , Ofertas , Cupons , Supermercado , Moda , Mercado Play , Vender , Contato , login/cadastro do Clinte , compras , favoritos Notificações , Carrinho 
+
+
+[MAIN] --> Onde vai , ficar o conteúdo do site 
+
+[ARTICLE] --> Dentro do Main , Onde fica os conteúdo 
+
+ Dentro do {ARTICLE} vamos colocar o nossos Produtos , Video , Fotos , Valores , Descriação , Avaliações  dos nossos Clintes. 
+
+
+[ASIDE] --> Onde vai ficar as coisas (EXTRAS)
+
+[FOOTER] --> E o rodapé do site 
