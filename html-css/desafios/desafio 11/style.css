@@ -66,13 +66,29 @@ section.normal {
 section.imagem {
     background-color: rgb(34, 30, 30);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px #0000006b;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+   background-image: url(pacote-d012/imagens/background001.jpg);
+   background-position: right center;
+}
+
+section#img02 {
+   background-image: url(pacote-d012/imagens/background002.jpg);
+}
 
 section.imagem > p {
     background-color: #868585;
     padding: 5px;
     display: inline-block;
+   text-shadow: 2px 2px 0px black;
 }
 
 
