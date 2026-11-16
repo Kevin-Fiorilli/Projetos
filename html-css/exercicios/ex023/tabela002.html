@@ -18,6 +18,29 @@
             border: 1px solid black;
             padding: 5px;
         }
+       
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(42, 42, 42, 0.407);
+        }
+        
+          tbody > tr:nth-child(odd) {
+            background-color: rgb(77, 255, 0);
+          }
+            
+           tbody > tr:nth-child(2n) {
+            background-color: rgb(255, 251, 2);
+           }
+           
+            tbody > tr:nth-child(3n) {
+                background-color: red;
+            }
+
+            td.num {
+                text-align: right;
+            }
 
         thead, tfoot {
             background-color: rgb(88, 87, 86);
@@ -30,6 +53,7 @@
      <!--
      ANATOMIA PARA TABELAS GRANDES 
      TABLE
+          CAPTION (legenda da tabela)
           THEAD 
               TR, TD, TH
           TBODY 
@@ -38,9 +62,10 @@
           TR, TD, TH
      -->
           <table>
+            <caption>Tabela de População do brasil</caption>
             <thead>
-                 <th>Estado</th>
-                 <th>População</th>
+                 <th scope="col" id="coluna estado">Estado</th>
+                 <th scope="col">População</th>
             </thead>
             <tbody>
                 <tr>
@@ -153,7 +178,7 @@
                 </tr>
             </tbody>
             <tfoot>
-                 <th>Total de Habitantes</th>
+                 <th scope="row">Total de Habitantes</th>
                  <td>214 211 951</td>
             </tfoot>
           </table>
