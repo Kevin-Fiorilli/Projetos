@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+         caption {
+           font-size: 1.3em;
+           font-weight: bold;
+           padding: 10px;
+         }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+
+        .homem {
+            background-color: rgb(35, 154, 245);
+            color: white;
+        }
+
+        .mulher {
+            background-color: pink;
+            color: white;
+        }
+
+        thead > tr > th {
+            background-color: rgb(78, 78, 78);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <h1>Exercício de Tabelas </h1>
+        <table>
+            <caption>
+                 Filmes Favoritos
+            </caption>
+            <thead class="cabeçalho">
+                    <tr>
+                        <th>Grupos</th>
+                        <th>Nomes</th>
+                        <th colspan="3">Filmes</th>
+                    </tr> 
+            </thead>
+            <tbody>
+                <!-- Grupo Mulheres -->
+                  <tr>
+                    <th rowspan="3" class="mulher">Mulheres</th>
+                    <td>Ana Silva Oliveira</td>
+                    <td>Romance</td>
+                    <td>Minha mãe peça 3</td>
+                    <td>Sou pobre feliz</td>
+                  </tr>
+                  <tr>
+                    <td> bruna Santos correa</td>
+                    <td>Ação</td>
+                    <td>Comédia</td>
+                    <td>Terror</td>
+                  </tr>
+                  <tr>
+                    <td> Daniela Silva cocato</td>
+                    <td>Piadas</td>
+                    <td>Carros</td>
+                    <td>Desenho</td>
+                  </tr>
+
+                  <!-- Grupo Homens -->
+                   <tr>
+                    <th rowspan="3" class="homem">Homems</th>
+                    <td> Gustavo Silva Santos</td>
+                    <td>Carros 2</td>
+                    <td>Toy Story</td>
+                    <td>Historias</td>
+                   </tr>
+                   <tr>
+                    <td>Bruno Quemorese</td>
+                 <td>Capitão America</td>
+                   <td>Gladiador</td>
+                   <td>Big Hero</td>
+                   </tr>
+                   <tr>
+                    <td> Biel Souza</td>
+                    <td>Matrix</td>
+                    <td>Rambo</td>
+                    <td>Viangadores</td>
+                   </tr>
+            </tbody>
+        </table>
+</body>
+</html>
