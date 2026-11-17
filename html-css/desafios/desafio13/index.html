@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Desafio 13 A </title>  <!-- Desafio com numeros -->
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 250px;
+        }
+
+       th {
+        border: 1px solid black;
+        padding: 1px;
+       }
+       
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(29, 29, 29);
+            color: white;
+        }
+ 
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+       <!-- Desafio que temos criar uma tabela de Mesclagem e Células o priemiro desafio e criar essa tabela com numero do 1 até 15-->
+        <h1>Tabela de Mesclagem e Células</h1>
+        <table>
+            <caption>Tabela de Mesclagem é Células</caption>
+                <thead>
+                    <th scope="col" id="coluna A">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                    <th scope="col">D</th>
+                </thead>
+          <tbody>
+                    
+            <tr>
+              <!-- essa tr vai do número 1 ao 4 -->
+              <td>1</td>
+              <td>2</td>
+              <td rowspan="2">3</td>
+              <td>4</td>
+              </tr>
+              
+             <!-- essa tr vai do número 5 ao 7 -->
+              <tr>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+               </tr>
+    
+            <!-- essa tr vai do número 8 e 9 -->
+        <tr>
+              <td colspan="3">8</td>
+              <td>9</td>
+          </tr>
+              
+      <!-- essa tr vai do número 10 ao 12 -->
+            <tr>
+              <td rowspan="2">10</td>
+              <td colspan="2">11</td>
+              <td>12</td>
+         </tr>
+              
+         <!-- essa tr vai do número 13 ao 15 -->
+            <tr>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+</body>
+</html>

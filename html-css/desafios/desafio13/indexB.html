@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Desafio 13 B</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 250px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 1px;
+        }
+       
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- Desafio que temos criar uma tabela de Mesclagem é Células agora e o segundo desafio com letras do A até N -->
+        <h1>Tabela de Mesclagem e Células</h1>
+        <table>
+            <caption>Tabela de Mesclagem é Células em Letras</caption>
+                <thead>
+                    <th scope="col" id="coluna A">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                    <th scope="col">D</th>
+                    <th scope="col">E</th>
+                </thead>
+
+                <tbody>
+                  
+                    <tr>
+                        <td colspan="4">A</td>
+                        <td rowspan="4">B</td>
+                    </tr>
+                </tbody>
+        </table>
+</body>
+</html>
