@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Tabela</title>
+    <style>
+                body {
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+         caption {
+           font-size: 1.3em;
+           font-weight: bold;
+           padding: 10px;
+         }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+
+        .homem {
+            background-color: rgb(35, 154, 245);
+            color: white;
+        }
+
+        .mulher {
+            background-color: pink;
+            color: white;
+        }
+
+        thead > tr > th {
+            background-color: rgb(78, 78, 78);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Tabela de alunos</h1>
+
+    <table>
+
+        <caption>
+            Tabela de notas
+        </caption>
+        <!-- caption define o título ou legenda da tabela. -->
+
+        <thead class="cabecalho">
+            <!-- thead representa a parte do cabeçalho da tabela.
+                 class="cabecalho" cria uma classe que pode ser estilizada no CSS. -->
+
+            <tr>
+                <!-- tr cria uma linha dentro da tabela. -->
+
+                <th rowspan="2">ID</th>
+                <!-- th cria uma célula de cabeçalho.
+                     rowspan="2" faz essa célula ocupar duas linhas. -->
+
+                <th rowspan="2">Nome</th>
+                <!-- O cabeçalho Nome também ocupa duas linhas. -->
+
+                <th rowspan="2">Série</th>
+                <!-- O cabeçalho Série ocupa duas linhas. -->
+
+                <th rowspan="2">Área</th>
+                <!-- O cabeçalho Área ocupa duas linhas. -->
+
+                <th rowspan="2">Disciplinas</th>
+                <!-- O cabeçalho Disciplinas ocupa duas linhas. -->
+
+                <th colspan="4">Notas</th>
+                <!-- colspan="4" faz o cabeçalho Notas ocupar quatro colunas.
+                     Essas quatro colunas serão Nota 1, 2, 3 e 4. -->
+
+                <th rowspan="2">Média</th>
+                <!-- O cabeçalho Média ocupa duas linhas. -->
+            </tr>
+
+            <tr>
+                <!-- Segunda linha do cabeçalho.
+                     Aqui ficam as quatro colunas de notas. -->
+
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Nota 4</th>
+                <!-- Cada th representa uma coluna de cabeçalho. -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- tbody representa o corpo da tabela.
+                 Aqui ficam os dados dos alunos. -->
+
+            <!-- ALUNO 1: KEVIN -->
+
+            <tr>
+                <!-- Primeira linha de informações do Kevin. -->
+
+                <td>01</td>
+                <!-- td cria uma célula comum.
+                     Aqui representa o ID do aluno. -->
+
+                <td>Kevin</td>
+                <!-- Nome do aluno. -->
+
+                <td>2°</td>
+                <!-- Série em que o aluno está. -->
+
+                <th rowspan="3">Exatas</th>
+                <!-- th cria uma célula de cabeçalho.
+                     rowspan="3" faz Exatas ocupar três linhas,
+                     agrupando as três disciplinas dessa área. -->
+
+                <td>Matemática</td>
+                <!-- Nome da disciplina. -->
+
+                <td>8</td>
+                <td>7</td>
+                <td>9</td>
+                <td>8</td>
+                <!-- Notas do aluno nas quatro avaliações. -->
+
+                <td>8</td>
+                <!-- Média das quatro notas de Matemática. -->
+            </tr>
+
+            <tr>
+                <!-- Segunda linha do Kevin. -->
+
+                <td>01</td>
+                <td>Kevin</td>
+                <td>2°</td>
+                <!-- ID, nome e série aparecem novamente. -->
+
+                <td>Física</td>
+                <!-- Disciplina do aluno. -->
+
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>8</td>
+                <!-- Quatro notas de Física. -->
+
+                <td>8</td>
+                <!-- Média de Física. -->
+            </tr>
+
+            <tr>
+                <!-- Terceira linha do Kevin. -->
+
+                <td>01</td>
+                <td>Kevin</td>
+                <td>2°</td>
+
+                <td>Química</td>
+                <!-- Terceira disciplina da área de Exatas. -->
+
+                <td>9</td>
+                <td>8</td>
+                <td>7</td>
+                <td>10</td>
+                <!-- Quatro notas de Química. -->
+
+                <td>8,5</td>
+                <!-- Média de Química. -->
+            </tr>
+
+            <!-- ALUNO 2: MARIA -->
+
+            <tr>
+                <!-- Primeira linha de informações da Maria. -->
+
+                <td>02</td>
+                <td>Maria</td>
+                <td>2°</td>
+
+                <th rowspan="2">Humanas</th>
+                <!-- Humanas ocupa duas linhas,
+                     pois Maria possui duas disciplinas nessa área. -->
+
+                <td>História</td>
+
+                <td>8</td>
+                <td>9</td>
+                <td>7</td>
+                <td>8</td>
+                <!-- Quatro notas de História. -->
+
+                <td>8</td>
+                <!-- Média de História. -->
+            </tr>
+
+            <tr>
+                <!-- Segunda linha de informações da Maria. -->
+
+                <td>02</td>
+                <td>Maria</td>
+                <td>2°</td>
+
+                <td>Geografia</td>
+
+                <td>9</td>
+                <td>8</td>
+                <td>9</td>
+                <td>8</td>
+                <!-- Quatro notas de Geografia. -->
+
+                <td>8,5</td>
+                <!-- Média de Geografia. -->
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <!-- tfoot representa o rodapé da tabela.
+                 Geralmente é usado para totais e resultados finais. -->
+
+            <tr>
+                <!-- Cria uma linha para o resultado geral. -->
+
+                <th colspan="9">Média geral</th>
+                <!-- colspan="9" faz essa célula ocupar nove colunas.
+                     Assim, sobra apenas a última coluna para o resultado. -->
+
+                <td>8,2</td>
+                <!-- Valor apresentado como média geral. -->
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
