@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag 002 teste</title>
+    <style>
+                body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding:  8px;
+        }
+
+        col.cgrupo  {
+            background-color: rgba(255, 255, 2, 0.547);
+        }
+    </style>
+</head>
+<body>
+            <h1>Exercício de tabela</h1>
+        
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+                <col class="ctelefone">
+                <col class="cendereco">
+                <col class="cgrupo" span="2"> <!-- Aqui ele vai pega 2 colunas -->
+            </colgroup>
+            <caption>Cadastro Usúario</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Numero</th>
+                <th scope="col">Estado Civil</th>
+            </tr>
+            <!-- Nomes de Mulheres -->
+            <tr>
+                <td>Luisa Domingues Oliveira</td>
+                <td>F</td>
+                <td>20</td>
+                <td>Atendente</td>
+                <td>(17) 99147578</td>
+                <td>Avenida Paulista</td>
+                <td>5540</td>
+                <td>Casada</td>
+            </tr>
+            <tr>
+                <td>Ana Santos Da Silva </td>
+                <td>F</td>
+                <td>18</td>
+                <td>Garçom</td>
+                <td>(11) 99643-8751</td>
+                <td>Faria Lima</td>
+                <td>3417</td>
+                <td>Noiva</td>
+            </tr>
+            <tr>
+                <td>Carla Azevedo Maria </td>
+                <td>F</td>
+                <td>30</td>
+                <td>Advogada</td>
+                <td>(11) 99791-4553</td>
+                <td>Avenida Nove de julho</td>
+                <td>4921</td>
+                <td>Solteira</td>
+            </tr>
+            <tr>
+                <td> Julia  Maria luz </td>
+                <td>F</td>
+                <td>36</td>
+                <td>Jornalista</td>
+                <td>(11) 99182-2645</td>
+                <td>Avenida 9 de julho</td>
+                <td>4921</td>
+                <td>Casada</td>
+            </tr>
+
+            <!-- Nomes de Homens-->
+            <tr>
+                <td> Felipe  Oliver de Santos </td>
+                <td>M</td>
+                <td>40</td>
+                <td>programador</td>
+                <td>(11) 99358-1689</td>
+                <td>Rua Augusta</td>
+                <td>798</td>
+                <td>solteiro</td>
+            </tr>
+             <tr>
+                <td> Gustavo Souza de Lima </td>
+                <td>M</td>
+                <td>19</td>
+                <td>Estudante</td>
+                <td>(11) 99874-5476</td>
+                <td>Rua 25 de Março</td>
+                <td>110</td>
+                <td>Noivado</td>
+            </tr>
+             <tr>
+                <td> Bernado  Pereira de Lima </td>
+                <td>M</td>
+                <td>35</td>
+                <td>Densenvolvedor de sistema</td>
+                <td>(11) 99127-6584</td>
+                <td>Rua João bassit</td>
+                <td>332</td>
+                <td>Casado</td>
+            </tr>
+             <tr>
+                <td> Kevin  Eduardo Fiorilli </td>
+                <td>M</td>
+                <td>16</td>
+                <td>programador</td>
+                <td>(11) 99615-7470</td>
+                <td>Avenida Doutor Aniloel Narazth</td>
+                <td>5510</td>
+                <td>solteiro</td>
+            </tr>
+        </table>
+</body>
+</html>
